@@ -1,0 +1,108 @@
+/* Account Grid Container */
+.account-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Individual Account Card */
+  .account-card {
+    background: #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .account-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #4a4a4a;
+    font-weight: bold;
+  }
+  
+  .account-card hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Service List */
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Individual Service Row */
+  .service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Service Link */
+  .service-link {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    flex: 1;
+  }
+  
+  .service-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Service Stats (Active and Total) */
+  .service-stats {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  
+  .active-count,
+  .total-count {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .active-value {
+    color: red;
+    margin-left: 4px;
+    font-weight: bold;
+  }
+  
+  .total-value {
+    color: green;
+    margin-left: 4px;
+    font-weight: bold;
+  }
+  
+  /* Toggle Switch */
+  .toggle input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #007bff;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .account-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .service-link {
+      font-size: 13px;
+    }
+  
+    .service-stats {
+      font-size: 11px;
+    }
+  }
+  
